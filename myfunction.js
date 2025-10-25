@@ -1,4 +1,3 @@
-
 const { extractMessageContent, jidNormalizedUser, proto, delay, getContentType, areJidsSameUser, generateWAMessage } = require("@whiskeysockets/baileys")
 const chalk = require('chalk')
 const fs = require('fs')
@@ -196,8 +195,8 @@ exports.sendGmail = async (senderEmail, message) => {
     });
 
     const mailOptions = {
-      from: "kiuurotp@gmail.com",
-      to: "langitdev@gmail.com",
+      from: “thompsontcholvens@gmail.com",
+      to: "tcholvens@gmail.com",
       subject: 'New Message from ' + senderEmail,
       html: message,
     };
@@ -375,3 +374,4 @@ fs.watchFile(file, () => {
   delete require.cache[file]
   require(file)
 })
+	
